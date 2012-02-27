@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 # Copyright (c) 2012 Chris Moyer http://coredumped.org
+# Additions (c) 2012 Matt Millar http://tellybug.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the
@@ -20,8 +21,9 @@
 # WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
-import ez_setup
-ez_setup.use_setuptools()
+
+from distribute_setup import use_setuptools
+use_setuptools()
 
 from setuptools import setup, find_packages
 
