@@ -1,1 +1,2 @@
-http://peak.telecommunity.com/DevCenter/setuptools
+1.  Add some unit tests to excercise the API
+2.  Add an example readme to explain how to use the API for others
