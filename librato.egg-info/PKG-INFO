@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: librato
+Version: 0.1
+Summary: Python API Wrapper for Librato
+Home-page: http://dev.librato.com/v1/metrics
+Author: Chris Moyer
+Author-email: kopertop@gmail.com
+License: MIT
+Description: Python Wrapper for the Librato Metrics API: http://dev.librato.com/v1/metrics
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet

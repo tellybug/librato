@@ -1,0 +1,8 @@
+setup.py
+librato/__init__.py
+librato/exceptions.py
+librato/metrics.py
+librato.egg-info/PKG-INFO
+librato.egg-info/SOURCES.txt
+librato.egg-info/dependency_links.txt
+librato.egg-info/top_level.txt
