@@ -125,14 +125,14 @@ class LibratoConnection(object):
 		from librato.metrics import Gauge
 		resp = self._mexe("gauges.json", query_props=query_props)
 		return self._parse(resp, "gauges", Gauge)
-
-    def get_or_create_gauge(self, name, description=None, **query_props):
-        gauge=None
-        try:
-            gauge=self.get_gauge(name)
-        except NotFound:
-            gauge=self.create_gauge(name,description=description,query_props=query_props)
-        return gauge
+	
+	def get_or_create_gauge(self, name, description=None, **query_props):
+	    gauge=None
+	    try:
+	        gauge=self.get_gauge(name)
+	    except exceptions.NotFound:
+	        gauge=self.create_gauge(name,description=description,query_props=query_props)
+	    return gauge
 
 	def create_gauge(self, name, description=None, **query_props):
 		"""Create a new gauge"""
@@ -172,13 +172,13 @@ class LibratoConnection(object):
 		resp = self._mexe("counters.json", query_props=query_props)
 		return self._parse(resp, "counters", Counter)
 
-    def get_or_create_counter(self, name, description=None, **query_props):
-        counter=None
-        try:
-            counter=self.get_counter(name)
-        except NotFound:
-            counter=self.create_counter(name,description=description,query_props=query_props)
-        return counter
+	def get_or_create_counter(self, name, description=None, **query_props):
+	    counter=None
+	    try:
+	        counter=self.get_counter(name)
+	    except exceptions.NotFound:
+	        counter=self.create_counter(name,description=description,query_props=query_props)
+	    return counter
 
 	def create_counter(self, name, description=None, **query_props):
 		"""Create a new counter"""
