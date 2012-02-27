@@ -14,4 +14,4 @@ Set up your Librato account
 	for item in range(0,20):
 	    gauge.add(item)
 	
-	That's it
+That's it
