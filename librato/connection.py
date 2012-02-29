@@ -67,7 +67,7 @@ class LibratoConnection(object):
 		headers['Authorization'] = "Basic " + base64.b64encode(self.username+":"+self.api_key).strip()
 		resp_data = None
 		while not success:
-			conn = HTTPSConnection(self.hostname)
+			conn = HTTPSConnection(self.hostname,timeout=10)
 			uri = self.base_path + path
 			body = None
 			if query_props:
